@@ -33,6 +33,7 @@ import {VerPerfilPage} from "../pages/ver-perfil/ver-perfil";
 import {ContactoPage} from "../pages/contacto/contacto";
 import {ModificarReservaPage} from "../pages/modificar-reserva/modificar-reserva";
 import {VerPagosPage} from "../pages/ver-pagos/ver-pagos";
+import {PerfilPage} from "../pages/perfil/perfil";
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import {VerPagosPage} from "../pages/ver-pagos/ver-pagos";
     VerPerfilPage,
     ContactoPage,
     ModificarReservaPage,
-    VerPagosPage
+    VerPagosPage,
+    PerfilPage
   ],
   imports: [
     BrowserModule,
@@ -83,7 +85,8 @@ import {VerPagosPage} from "../pages/ver-pagos/ver-pagos";
     VerPerfilPage,
     ContactoPage,
     ModificarReservaPage,
-    VerPagosPage
+    VerPagosPage,
+    PerfilPage
   ],
   providers: [
     StatusBar,

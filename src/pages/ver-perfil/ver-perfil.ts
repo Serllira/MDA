@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AuthService } from '../../services/auth.service';
+import {PerfilPage} from "../perfil/perfil";
 
 /**
  * Generated class for the VerPerfilPage page.
@@ -29,6 +30,10 @@ export class VerPerfilPage {
 
   modificarFoto(){
     console.log('Soy modificar foto');
+  }
+
+  editarPerfil(){
+    this.navCtrl.push(PerfilPage);
   }
 
 }

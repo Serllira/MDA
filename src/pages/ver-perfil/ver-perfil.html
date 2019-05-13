@@ -15,21 +15,18 @@
       <ion-icon name="person" slot="start"></ion-icon>
       <ion-label (click)="modificarCampo()">
         <p class="bold">Nombre</p>
-        <ion-icon name="brush" float-right="" ></ion-icon>
         <h2>{{userData.nombre}}</h2>
       </ion-label>
     </ion-item>
     <ion-item>
       <ion-label (click)="modificarCampo()">
         <p class="bold">Apellido</p>
-        <ion-icon name="brush" float-right=""></ion-icon>
         <h2>{{userData.apellido}}</h2>
       </ion-label>
     </ion-item>
     <ion-item>
       <ion-label (click)="modificarCampo()">
         <p class="bold">Teléfono</p>
-        <ion-icon name="brush" float-right=""></ion-icon>
         <!--<h2 style="margin-left: 7%">{{userData.tlf}}</h2>-->
         <h2>{{userData.tlf}}</h2>
       </ion-label>
@@ -37,11 +34,14 @@
     <ion-item>
       <ion-label (click)="modificarCampo()">
         <p class="bold">Email</p>
-        <ion-icon name="brush" float-right=""></ion-icon>
         <!--<h2 style="margin-left: 7%">{{auth.getEmail()}}</h2>-->
         <h2 >{{auth.getEmail()}}</h2>
 
       </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button (click)="editarPerfil()">Editar perfil</button>
     </ion-item>
     <ion-label></ion-label>
   </ion-list>

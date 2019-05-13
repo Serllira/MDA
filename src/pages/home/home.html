@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Bienvenido, {{auth.getEmail()}}</ion-title>
+    <ion-title *ngFor="let userData of auth.getUserData(auth.getEmail())">{{userData.nombre}}</ion-title>
   </ion-navbar>
 </ion-header>
 

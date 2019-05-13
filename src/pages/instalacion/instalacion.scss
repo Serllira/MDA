@@ -1,0 +1,43 @@
+page-instalacion {
+
+  h2{
+    font-weight: bold !important;
+    font-size: 20px !important;
+  }
+
+  .lugar{
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 45px;
+  }
+
+  .jugadores{
+    padding-left: 80px;
+    padding-bottom: 20px;
+  }
+
+  ion-content{
+    background-color: #FBFEC2 !important;
+  }
+
+  .imagenes{
+    width: 125%;
+    height: 200px;
+    margin-left: -35px;
+  }
+
+  .imagenes2{
+    width: 125%;
+    height: 200px;
+    margin-left: 50px;
+    z-index: 10;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    ///* right: 0; */
+    margin-left: -90px !important;
+  }
+}

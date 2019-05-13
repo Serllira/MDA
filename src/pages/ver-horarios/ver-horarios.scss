@@ -1,0 +1,60 @@
+page-ver-horarios {
+  .separa{
+    width: 65px;
+    text-align: center;
+    margin-top: 5px;
+    color: blue;
+  }
+
+
+  .row{
+    border: thin solid black;
+    text-align: center;
+  }
+
+  .col{
+    border: thin solid black;
+    text-align: center;
+  }
+
+
+  .positive{
+    background-color: #32db64;
+  }
+
+  .negative{
+    background-color: #f53d3d;
+  }
+
+  .cuadrado{
+    width:5vh;
+    max-width:100px;
+    height:5vh;
+    max-height:100px;
+    position:relative;
+    background:#32db64;
+    margin: 10px;
+    float: left;
+  }
+
+  .cuadrado2{
+    width:5vh;
+    max-width:100px;
+    height:5vh;
+    max-height:100px;
+    position:relative;
+    background:#f53d3d;
+    margin: 10px;
+    clear: both;
+    float: left;
+  }
+
+  .caja1{
+    float: left;
+  }
+
+  .caja2{
+    float: left;
+  }
+}
+

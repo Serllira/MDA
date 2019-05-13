@@ -1,0 +1,28 @@
+ion-card.adv-map p {
+  font-size: 0.7em !important;
+}
+
+button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50;
+}
+
+ion-content.cards-bg {
+  background-color: #f4f4f7;
+}
+
+ion-card-header{
+  background-color: #007aff;
+  padding: 2px;
+  color: #ffffff !important;
+  font-size: large;
+  font-weight: bold;
+}
+
+ion-card-content{
+  padding-top: 3% !important;
+}
+
+ion-icon{
+  padding-right: 4%;
+}

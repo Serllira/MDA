@@ -1,0 +1,57 @@
+<!--
+  Generated template for the ReservasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>reservas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding-bottom>
+  <button *ngIf="auth.getEmail()==='user01@mda.es'" ion-button icon-only (click)="addReserva()">
+    <ion-icon name="add-circle"></ion-icon>
+  </button>
+
+  <ion-list>
+    <ion-item *ngFor="let fecha of fechas" (click)="selectFecha(fecha.key,fecha.fecha)">
+      Fecha= {{fecha.fecha}}
+    </ion-item>
+  </ion-list>
+
+<ion-grid fixed="">
+      <ion-row class="fila"><div class="separa">Lunes</div>
+      <ion-col [ngClass]="{'positive': fecha.disponibilidad===true, 'negative': fecha.disponibilidad===false}" *ngFor="let fecha of fechas2" (click)="selectFecha2(fecha.key,fecha.hora,fecha.dia,fecha.disponibilidad)">{{fecha.hora}}</ion-col>
+      </ion-row>
+
+      <ion-row><div class="separa">Martes</div>
+        <ion-col [ngClass]="{'positive': fecha.disponibilidad===true, 'negative': fecha.disponibilidad===false}" *ngFor="let fecha of fechas3" (click)="selectFecha2(fecha.key,fecha.hora,fecha.dia,fecha.disponibilidad)">{{fecha.hora}}</ion-col>
+      </ion-row>
+
+    <ion-row><div class="separa">Miércoles</div>
+      <ion-col [ngClass]="{'positive': fecha.disponibilidad===true, 'negative': fecha.disponibilidad===false}" *ngFor="let fecha of fechas4" (click)="selectFecha2(fecha.key,fecha.hora,fecha.dia,fecha.disponibilidad)">{{fecha.hora}}</ion-col>
+    </ion-row>
+
+    <ion-row><div class="separa">Jueves</div>
+      <ion-col [ngClass]="{'positive': fecha.disponibilidad===true, 'negative': fecha.disponibilidad===false}" *ngFor="let fecha of fechas5" (click)="selectFecha2(fecha.key,fecha.hora,fecha.dia,fecha.disponibilidad)">{{fecha.hora}}</ion-col>
+    </ion-row>
+
+    <ion-row><div class="separa">Viernes</div>
+      <ion-col [ngClass]="{'positive': fecha.disponibilidad===true, 'negative': fecha.disponibilidad===false}" *ngFor="let fecha of fechas6" (click)="selectFecha2(fecha.key,fecha.hora,fecha.dia,fecha.disponibilidad)">{{fecha.hora}}</ion-col>
+    </ion-row>
+
+    <ion-row><div class="separa">Sábado</div>
+      <ion-col [ngClass]="{'positive': fecha.disponibilidad===true, 'negative': fecha.disponibilidad===false}" *ngFor="let fecha of fechas7" (click)="selectFecha2(fecha.key,fecha.hora,fecha.dia,fecha.disponibilidad)">{{fecha.hora}}</ion-col>
+    </ion-row>
+
+    <ion-row><div class="separa">Domingo</div>
+      <ion-col [ngClass]="{'positive': fecha.disponibilidad===true, 'negative': fecha.disponibilidad===false}" *ngFor="let fecha of fechas8" (click)="selectFecha2(fecha.key,fecha.hora,fecha.dia,fecha.disponibilidad)">{{fecha.hora}}</ion-col>
+    </ion-row>
+</ion-grid>
+
+  <div class="cuadrado"></div><div class="caja1"><h6>Horas disponibles</h6></div>
+  <div class="cuadrado2"></div><div class="caja2"><h6>Horas no disponibles</h6></div>
+
+</ion-content>

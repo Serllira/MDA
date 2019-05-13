@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Confirmar Reserva</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card color="medium">
+    <ion-card-header>
+      <ion-card-title style="font-weight: bold; text-align: center">Información de la reserva</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content style="font-size: 18px">
+      Dia: {{dia}}
+      <div></div>
+      Hora: {{hora}}
+    </ion-card-content>
+  </ion-card>
+  <button *ngIf="auth.getEmail()==='user01@mda.es'" ion-button right color="danger" (click)="borrarSelectedFecha(key,dia)">Borrar</button>
+  <button ion-button class="confReserva" color="blue" (click)="reservarSelectedFecha2(hora,auth.getEmail(),key, dia, disponible)">Reservar</button>
+</ion-content>
+
+

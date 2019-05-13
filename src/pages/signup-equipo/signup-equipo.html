@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Registro de Equipo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="signupTeam()" [formGroup]="form">
+    <ion-list inset>
+
+      <ion-item [ngClass]="{ invalid: nombreEquipoErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" placeholder="Nombre del Equipo" formControlName="nombreEquipo"></ion-input>
+      </ion-item>
+      <div ngxErrors="nombreEquipo" #nombreEquipoErrors="ngxErrors">
+        <div [ngxError]="['nombreEquipo', 'required']" [when]="['touched']">Debe tener menos de 16 caracteres y sólo letras</div>
+      </div>
+
+      <ion-item [ngClass]="{ invalid: categoriaErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" placeholder="Categoría" formControlName="categoria"></ion-input>
+      </ion-item>
+      <div ngxErrors="categoria" #categoriaErrors="ngxErrors">
+        <div [ngxError]="['categoria', 'required']" [when]="['touched']">Debe tener menos de 16 caracteres y sólo letras</div>
+      </div>
+
+      <ion-item [ngClass]="{ invalid: sportErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" placeholder="Deporte" formControlName="sport"></ion-input>
+      </ion-item>
+      <div ngxErrors="sport" #sportErrors="ngxErrors">
+        <div [ngxError]="['sport', 'required']" [when]="['touched']">Debe tener menos de 12 caracteres y sólo letras</div>
+      </div>
+
+      <ion-item [ngClass]="{ invalid: fichaErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" placeholder="Nº afiliación" formControlName="ficha"></ion-input>
+      </ion-item>
+      <div ngxErrors="ficha" #fichaErrors="ngxErrors">
+        <div [ngxError]="['ficha', 'required']" [when]="['touched']">Debe tener 15 dígitos</div>
+      </div>
+
+      <!--<ion-item>-->
+        <!--<ion-label>Deporte</ion-label>-->
+        <!--<ion-select [ngModel]="deporte" submitText="OK" cancelText="No"></ion-select>-->
+        <!--<ion-option value="futbol">Fútbol</ion-option>-->
+        <!--<ion-option value="futbol-siete">Fútbol 7</ion-option>-->
+        <!--<ion-option value="futbol-sala">Fútbol Sala</ion-option>-->
+        <!--<ion-option value="baloncesto">Baloncesto</ion-option>-->
+      <!--</ion-item>-->
+
+      <ion-item [ngClass]="{ invalid: tlfErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" placeholder="Teléfono" formControlName="tlf"></ion-input>
+      </ion-item>
+      <div ngxErrors="tlf" #tlfErrors="ngxErrors">
+        <div [ngxError]="['tlf', 'required']" [when]="['touched']">Debe ser un teléfono válido</div>
+      </div>
+
+      <ion-item [ngClass]="{ invalid: emailErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" placeholder="Email" formControlName="email"></ion-input>
+      </ion-item>
+      <div ngxErrors="email" #emailErrors="ngxErrors">
+        <div [ngxError]="['email', 'required']" [when]="['touched']">Debe ser un email válido</div>
+      </div>
+
+      <ion-item [ngClass]="{ invalid: passwordErrors.hasError('*', ['touched']) }">
+        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      </ion-item>
+      <div ngxErrors="password" #passwordErrors="ngxErrors">
+        <div [ngxError]="['minlength', 'required']" [when]="['touched']">Debe tener al menos 6 caracteres</div>
+      </div>
+    </ion-list>
+
+    <div padding-horizontal>
+      <div class="form-error">{{signupTeamError}}</div>
+      <button ion-button full type="submit" [disabled]="!form.valid">Registrarse</button>
+    </div>
+  </form>
+</ion-content>

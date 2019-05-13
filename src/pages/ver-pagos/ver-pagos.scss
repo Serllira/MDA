@@ -1,0 +1,49 @@
+page-ver-pagos {
+  .separa{
+    width: 80px;
+    text-align: center;
+    color: black;
+    height: 21px;
+    background-color: #488aff;
+    font-weight: bold;
+  }
+
+  .grid{
+    background-color: lightyellow;
+  }
+
+  .hora{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .hora2{
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+  }
+
+  .row{
+    border: thin solid black;
+    text-align: center;
+  }
+
+  .col{
+    text-align: center;
+  }
+  .cuadrado2{
+    width:5vh;
+    max-width:100px;
+    height:5vh;
+    max-height:100px;
+    position:relative;
+    background:#f53d3d;
+    margin: 10px;
+    clear: both;
+    float: left;
+  }
+
+  .pendientes{
+    margin-top: 50px;
+  }
+}

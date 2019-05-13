@@ -1,0 +1,88 @@
+<!--
+  Generated template for the VerPagosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pagos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid fixed="">
+    <ion-row class="fila"><div class="separa">Lunes</div>
+      <div *ngFor="let fecha of fechas2" class="hora2">
+        <ion-row *ngIf="fecha.pagado===false && fecha.email===auth.getEmail()" style="background-color: red"><div class="hora" >{{fecha.hora}} Día limite de pago: {{fecha.fechaPago}}</div></ion-row>
+        <ion-row *ngIf="fecha.pagado===true && fecha.email===auth.getEmail()" style="background-color: green"><div class="hora">{{fecha.hora}}</div></ion-row>
+      </div>
+    </ion-row>
+
+    <ion-row class="fila"><div class="separa">Martes</div>
+      <div *ngFor="let fecha of fechas3" class="hora2">
+        <ion-row *ngIf="fecha.pagado===false && fecha.email===auth.getEmail()" style="background-color: red"><div class="hora" >{{fecha.hora}} \n Día limite de pago: {{fecha.fechaPago}}</div></ion-row>
+        <ion-row *ngIf="fecha.pagado===true && fecha.email===auth.getEmail()"  style="background-color: green"><div class="hora">{{fecha.hora}}</div></ion-row>
+      </div>
+    </ion-row>
+
+    <ion-row class="fila"><div class="separa">Miércoles</div>
+      <div *ngFor="let fecha of fechas4" class="hora2">
+        <ion-row *ngIf="fecha.pagado===false && fecha.email===auth.getEmail()" style="background-color: red"><div class="hora" >{{fecha.hora}} Día limite de pago: {{fecha.fechaPago}}</div></ion-row>
+        <ion-row *ngIf="fecha.pagado===true && fecha.email===auth.getEmail()"  style="background-color: green"><div class="hora">{{fecha.hora}}</div></ion-row>
+      </div>
+    </ion-row>
+
+
+    <ion-row class="fila"><div class="separa">Jueves</div>
+      <div *ngFor="let fecha of fechas5" class="hora2">
+        <ion-row *ngIf="fecha.pagado===false && fecha.email===auth.getEmail()" style="background-color: red"><div class="hora" >{{fecha.hora}} Día limite de pago: {{fecha.fechaPago}}</div></ion-row>
+        <ion-row *ngIf="fecha.pagado===true && fecha.email===auth.getEmail()"  style="background-color: green"><div class="hora">{{fecha.hora}}</div></ion-row>
+      </div>
+    </ion-row>
+
+
+    <ion-row class="fila"><div class="separa">Viernes</div>
+      <div *ngFor="let fecha of fechas6" class="hora2">
+        <ion-row *ngIf="fecha.pagado===false && fecha.email===auth.getEmail()" style="background-color: red"><div class="hora" >{{fecha.hora}} Día limite de pago: {{fecha.fechaPago}}</div></ion-row>
+        <ion-row *ngIf="fecha.pagado===true && fecha.email===auth.getEmail()"  style="background-color: green"><div class="hora">{{fecha.hora}}</div></ion-row>
+      </div>
+    </ion-row>
+
+
+    <ion-row class="fila"><div class="separa">Sábado</div>
+      <div *ngFor="let fecha of fechas7" class="hora2">
+        <ion-row *ngIf="fecha.pagado===false && fecha.email===auth.getEmail()" style="background-color: red"><div class="hora" >{{fecha.hora}} Día limite de pago: {{fecha.fechaPago}}</div></ion-row>
+        <ion-row *ngIf="fecha.pagado===true && fecha.email===auth.getEmail()"  style="background-color: green"><div class="hora">{{fecha.hora}}</div></ion-row>
+      </div>
+    </ion-row>
+
+
+    <ion-row class="fila"><div class="separa">Domingo</div>
+      <div *ngFor="let fecha of fechas8" class="hora2">
+        <ion-row *ngIf="fecha.pagado===false && fecha.email===auth.getEmail()" style="background-color: red"><div class="hora" >{{fecha.hora}} Día limite de pago: {{fecha.fechaPago}}</div></ion-row>
+        <ion-row *ngIf="fecha.pagado===true && fecha.email===auth.getEmail()"  style="background-color: green"><div class="hora">{{fecha.hora}}</div></ion-row>
+      </div>
+    </ion-row>
+  </ion-grid>
+  <div class="cuadrado2"></div><div class="caja2"><h6>Precio por reserva pendiente: 3€ </h6></div>
+
+  <h4 class="pendientes" *ngFor="let abonado of abonados"><div *ngIf="abonado.pagado===false || abonado.email===auth.getEmail()">Pago pendiente abono: 15€</div></h4>
+</ion-content>
+
+
+<!--
+  Generated template for the VerPagosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>ver-pagos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+</ion-content>

@@ -1,0 +1,13 @@
+listado {
+  .card-header{
+    background-color: map-get($colors, primary);
+    padding: 2px;
+    color: #fff;
+    font-size: large;
+  }
+  .card-content {
+    padding: 0px 10px;
+    max-height: 0px;
+    font-size: medium;
+  }
+}

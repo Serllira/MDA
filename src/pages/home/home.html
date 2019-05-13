@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bienvenido, {{auth.getEmail()}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list padding-left>
+    <button ion-button col-5 (click)="reservas()"> Crear reserva</button>
+    <button ion-button col-5 (click)="verReservas()"> Ver reservas</button>
+  </ion-list>
+  <ion-list padding-left>
+    <button ion-button col-5 (click)="verHorario()"> Ver horarios</button>
+    <button ion-button col-5 (click)="verHoras()"> disponibilidad</button>
+    </ion-list>
+  <ion-list padding-left>
+    <button ion-button col-5> Botón 5</button>
+    <button ion-button col-5> Botón 6</button>
+  </ion-list>
+
+  <button ion-button color="secondary" col-10 style="margin-left: 18px" (click)="verVentajas()">Abónate</button>
+</ion-content>

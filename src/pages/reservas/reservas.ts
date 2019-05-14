@@ -99,6 +99,7 @@ export class ReservasPage {
       key:key,
       hora:hora,
       dia:dia,
+      pagado: false,
       disponible:disponible
     });
   }

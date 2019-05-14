@@ -127,7 +127,8 @@ export class GestionarReservaPage {
 
           hora: hora,
           email: email,
-          dia: dia
+          dia: dia,
+          pagado: false
         });
         //this.afDB.database.ref('prueba/Lunes/'+key).remove();
         this.afDB.database.ref('prueba/Lunes/'+key).update({disponibilidad: false});
@@ -147,7 +148,8 @@ export class GestionarReservaPage {
 
           hora: hora,
           email: email,
-          dia: dia
+          dia: dia,
+          pagado: false
         });
         //this.afDB.database.ref('prueba/Lunes/'+key).remove();
         this.afDB.database.ref('prueba/Martes/'+key).update({disponibilidad: false});
@@ -166,7 +168,8 @@ export class GestionarReservaPage {
 
           hora: hora,
           email: email,
-          dia: dia
+          dia: dia,
+          pagado: false
         });
         //this.afDB.database.ref('prueba/Lunes/'+key).remove();
         this.afDB.database.ref('prueba/Miércoles/'+key).update({disponibilidad: false});
@@ -185,7 +188,8 @@ export class GestionarReservaPage {
 
           hora: hora,
           email: email,
-          dia: dia
+          dia: dia,
+          pagado: false
         });
         //this.afDB.database.ref('prueba/Lunes/'+key).remove();
         this.afDB.database.ref('prueba/Jueves/'+key).update({disponibilidad: false});
@@ -204,7 +208,8 @@ export class GestionarReservaPage {
 
           hora: hora,
           email: email,
-          dia: dia
+          dia: dia,
+          pagado: false
         });
         //this.afDB.database.ref('prueba/Lunes/'+key).remove();
         this.afDB.database.ref('prueba/Viernes/'+key).update({disponibilidad: false});
@@ -223,7 +228,8 @@ export class GestionarReservaPage {
 
           hora: hora,
           email: email,
-          dia: dia
+          dia: dia,
+          pagado: false
         });
         //this.afDB.database.ref('prueba/Lunes/'+key).remove();
         this.afDB.database.ref('prueba/Sábado/'+key).update({disponibilidad: false});
@@ -242,7 +248,8 @@ export class GestionarReservaPage {
 
           hora: hora,
           email: email,
-          dia: dia
+          dia: dia,
+          pagado: false
         });
         //this.afDB.database.ref('prueba/Lunes/'+key).remove();
         this.afDB.database.ref('prueba/Domingo/'+key).update({disponibilidad: false});
